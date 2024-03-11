@@ -54,7 +54,7 @@
                 <div class="col">
                     <h2>Vision Statement</h2>
                     <div class="container">
-                        <img src="images/pexels-thirdman-7659454.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50vh; width: 50vw;">
+                        <img src="images/pexels-thirdman-7659454.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50vh; width: 100vw;">
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
             <div class="row text-center">
                 <div class="col">
                     <h2>Mission statement</h2>
-                    <img src="images/pexels-kampus-production-8949833.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50vh; width: 50vw;">
+                    <img src="images/pexels-kampus-production-8949833.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50vh; width: 100vw;">
                 </div>
             </div>
             <div class="row text-center">
@@ -82,7 +82,7 @@
             <div class="row text-center">
                 <div class="col">
                     <h2>Services</h2>
-                    <img src="images/pexels-kampus-production-7551583.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50vh; width: 50vw;">
+                    <img src="images/pexels-kampus-production-7551583.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50vh; width: 100vw;">
                 </div>
             </div>
             <div class="row text-center">
@@ -144,6 +144,7 @@
         function LoadContactPage() {
             $(".contact-page").show();
             $(".index-page").hide();
+            $(".index-page-mobile").hide();
         }
 
         window.mobileCheck = function() {
@@ -152,7 +153,7 @@
             
             if (check) {
                 $(".index-page-mobile").show();
-                $(".index-hide").show();
+                $(".index-page").hide();
             }
         
             return check;
