@@ -160,6 +160,29 @@
         };
 
         window.mobileCheck();
+
+        let myCorsApiKey = "b14d29932993c833c3544e38fbdbcb3f836ea";
+        let data = null;
+
+        let xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                console.log(this.responseText);
+            }
+        });
+
+        xhr.open("GET", "https://aokhomehealthcare-c3a4.restdb.io");
+
+        xhr.setRequestHeader("content-type", "application/json");
+        xhr.setRequestHeader("x-apikey", myCorsApiKey);
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
+        xhr.setRequestHeader('Content-type', 'application/ecmascript');
+        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+
+        xhr.send(data);
     </script>
   </body>
 </html>
