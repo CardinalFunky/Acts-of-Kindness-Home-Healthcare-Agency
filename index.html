@@ -87,7 +87,7 @@
             </div>
             <div class="row text-center">
                 <div class="col" style="font-size: 1.3rem;">
-                    <p>Light housekeeping, outings (doctor's appointment, grocery store), baths and dressing, prepare meals, companionship, medicine reminder, assistant with mobility and much more.</p>
+                    <p>Light housekeeping, outings (doctor's appointment, grocery store), baths and dressing, prepare meals, companionship, medicine reminder, assistant with mobility, 24-hour care and much more.</p>
                 </div>
             </div>
         </div>
@@ -100,6 +100,7 @@
                 <h4>Vantressa Woodson, Owner</h4>
                 <h4>478-919-9492</h4>
                 <h4>actsofkindnesshomehealth@gmail.com</h4>
+                <button class="btn btn-primary" onclick="OpenRecruitmentForm()">Recruitment Form</button>
             </div>
         </div>
         <div class="container-fluid" style="background-color: #fde3e3;">
@@ -161,28 +162,9 @@
 
         window.mobileCheck();
 
-        let myCorsApiKey = "b14d29932993c833c3544e38fbdbcb3f836ea";
-        let data = null;
-
-        let xhr = new XMLHttpRequest();
-        xhr.withCredentials = false;
-
-        xhr.addEventListener("readystatechange", function () {
-            if (this.readyState === 4) {
-                console.log(this.responseText);
-            }
-        });
-
-        xhr.open("GET", "https://aokhomehealthcare-c3a4.restdb.io");
-
-        xhr.setRequestHeader("content-type", "application/json");
-        xhr.setRequestHeader("x-apikey", myCorsApiKey);
-        xhr.setRequestHeader("cache-control", "no-cache");
-        xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
-        xhr.setRequestHeader('Content-type', 'application/ecmascript');
-        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-
-        xhr.send(data);
+        function OpenRecruitmentForm() {
+            window.open("https://forms.gle/utZHRY3KERYCBQ7y9");
+        }
     </script>
   </body>
 </html>
